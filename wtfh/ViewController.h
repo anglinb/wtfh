@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
+@property (weak, nonatomic) IBOutlet UISwitch *cleanSwitch;
+@property (weak, nonatomic) IBOutlet UILabel *costumeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *testButton;
+@property (weak, nonatomic) IBOutlet UILabel *promtLabel;
+@property  (nonatomic) BOOL on;
+- (IBAction)calculate:(id)sender;
+- (IBAction)loadJSON:(id)sender;
+- (IBAction)cleanToggle:(id)sender;
 @end
